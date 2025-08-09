@@ -39,12 +39,7 @@ manifest:
       remote: carrefinho
       revision: main
     - name: zmk-rgbled-widget
-      remote: caksoylar      include:
-        - board: seeeduino_xiao_ble
-          shield: forager_left rgbled_adapter
-          snippet: studio-rpc-usb-uart
-        - board: seeeduino_xiao_ble
-          shield: forager_right rgbled_adapter
+      remote: caksoylar
       revision: main
 
     # ZMK modules
