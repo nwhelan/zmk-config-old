@@ -10,5 +10,6 @@
 
 #include "zmk-helpers/key-labels/34.h"
 #include "base.keymap"
+#include "zmk/app/boards/shields/cradio/cradio.dtsi"
 
 /{ chosen { zmk,physical-layout = &cuddlykeyboards_ferris_layout; }; };
