@@ -26,11 +26,26 @@ manifest:
       url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
 
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: forager-zmk-module
+      remote: carrefinho
+      revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar      include:
+        - board: seeeduino_xiao_ble
+          shield: forager_left rgbled_adapter
+          snippet: studio-rpc-usb-uart
+        - board: seeeduino_xiao_ble
+          shield: forager_right rgbled_adapter
+      revision: main
 
     # ZMK modules
     - name: zmk-adaptive-key
